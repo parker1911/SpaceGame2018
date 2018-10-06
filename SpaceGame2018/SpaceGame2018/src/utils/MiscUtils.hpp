@@ -16,8 +16,9 @@ public:
 		//get the current time
 		time = glfwGetTime();
 
+		deltaTime = time - t0;
 		//Calcul and display the FPS
-		if ((time - t0) > 1.0 || frames == 0)
+		if ((deltaTime) > 1.0 || frames == 0)
 		{
 			fps = (double)frames / (time - t0);
 			std::cout << fps << std::endl;
@@ -27,43 +28,10 @@ public:
 		frames++;
 	}
 
+
 private:
 	int    frames;
 	double fps, time;
 	double t0;
-
-
+	float deltaTime;
 };
-//
-//
-//#pragma once
-//
-//
-//#include <iostream>
-//
-//
-//
-//
-//class MiscUtils
-//{
-//public:
-//	MiscUtils()
-//	{
-//	}
-//
-//	void frameCount()
-//	{
-//
-//		std::cout << "time "<< t0 << std::endl;
-//		
-//	}
-//
-//private:
-//	int    frames = 3;
-//	double fps, time;
-//	double t0 = glfwGetTime();
-//
-//
-//};
-//
-//

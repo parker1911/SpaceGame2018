@@ -1,16 +1,11 @@
 #include <iostream>
-
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-
-
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>
 #include "utils/MiscUtils.hpp"
-
-
 #include "Camera.h"
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
@@ -33,9 +28,7 @@ const char *fragmentShaderSource = "#version 330 core\n"
 "   FragColor = vec4(0.0f, 0.0f, 0.7f, 1.0f);\n"
 "}\n\0";
 
-//glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
-//glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
-//glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
+
 
 
 // camera
@@ -81,7 +74,7 @@ int main(void)
 
 	if (glewInit() != GLEW_OK)
 	{
-		std::cout << "Glew didnt init!" << std::endl;
+		std::cout << "Glew didnt init!!" << std::endl;
 	}
 
 
