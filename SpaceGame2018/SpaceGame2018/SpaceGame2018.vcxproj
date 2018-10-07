@@ -19,9 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\utils\Ray.cpp" />
     <ClCompile Include="src\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\utils\Ray.h" />
     <ClInclude Include="src\Camera.h" />
     <ClInclude Include="src\utils\MiscUtils.hpp" />
   </ItemGroup>
